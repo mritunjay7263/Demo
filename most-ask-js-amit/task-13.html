@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter</title>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h1>Write a Javascript Program to Remove Specific Item From an Array</h1>
+    <h2>Open Console for Result</h2>
+
+    <script>
+        const removeItemFromArray = (array, n) => {
+            const index = array.indexOf(n);
+
+            // if the element is in the array, remove it
+            if(index > -1) {
+                // remove item
+                array.splice(index, 1);
+            }
+            return array;
+        }
+
+        const result = removeItemFromArray([1, 2, 3 , 4, 5], 2);
+        console.log(result);
+    </script>
+</body>
+</html>

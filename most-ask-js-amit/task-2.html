@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter</title>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h1>Write code for short an array objects using by their values.</h1>
+    <h2>Open Console for Result</h2>
+
+    <script>
+        let students = [
+            {id:1,name:"vikas",age:35},
+            {id:2,name:"ajay",age:31},
+            {id:3,name:"amit",age:40},
+            {id:4,name:"ajay",age:20}
+        ]
+
+        students.sort((a, b)=>{
+            //return a.age - b.age
+            return (a.name > b.name) - (a.name < b.name)
+        })
+        console.log(students)
+    </script>
+</body>
+</html>

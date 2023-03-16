@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter</title>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h3>Write a JavaScript program to display the current day and time in the following format.<br>
+        Sample Output : Today is : Tuesday.<br>
+        Current time is : 10 PM : 30 : 38</h3>
+    
+    <h2>Result:</h2>
+    <h2 id="day"></h2>
+    <h2 id="time"></h2>
+
+    <script>
+        const todayDay = document.getElementById("day");
+        const timeNow = document.getElementById("time");
+
+        window.addEventListener("load",()=>{
+        let today = new Date();
+
+        const day = today.getDay();
+
+        const dayList = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+        todayDay.innerHTML = `Today is: ${dayList[day]}`;
+
+        setInterval(()=>{
+        today = new Date();
+        let hour = today.getHours();
+        let amPm = (hour >=12) ? "PM" : "AM";
+        let hour12 = (hour >=12) ? hour-12 : hour;
+        let min = today.getMinutes();
+        min = (min < 10) ? '0'+min : min;
+        let second = today.getSeconds();
+        second = (second < 10) ? '0'+second : second;
+        timeNow.innerHTML = `Current Time : ${hour12} ${amPm} : ${min} : ${second}`;
+        },1000)
+
+        });
+    </script>
+</body>
+</html>

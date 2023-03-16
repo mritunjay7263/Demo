@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter</title>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h1>Write a JavaScript program to Check Prime Number.</h1>
+    <h2>Open Console for Result</h2>
+
+    <script>
+        // wo number jo 1 se ya khud(self) se puri tarah divide ho jaye use Prime Number kahte hai.
+        // 2,3,5,7,11
+
+        let num = 8;
+        let isPrimeNumber = true;
+        //console.log(3 % 2 == 0)
+
+        for(let i = 2; i < num; i++){
+            if(num % i == 0){
+                isPrimeNumber = false
+            }
+        }
+
+        if(isPrimeNumber == true){
+            console.log(`${num} is Prime Number`)
+        }else{
+            console.log(`${num} is not Prime Number`)
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

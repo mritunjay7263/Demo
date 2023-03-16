@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter</title>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h1>Write a JavaScript program to count the number of vowels in a given string.</h1>
+    <h2>Open Console for Result</h2>
+
+    <script>
+        let showText = document.getElementById('showText');
+        let getValue = prompt('Enter a string');
+        let vowel = /[aeiou]/gi
+        let compare = getValue.match(vowel)
+        showText.innerHTML = `Vowel is ${compare.length} ${compare.toString()}`
+
+        // function countVowel(str) { 
+        //     const count = str.match(/[aeiou]/gi).length;
+        //     return count;
+        // }
+        // const string = prompt('Enter a string: ');
+        // const result = countVowel(string);
+        // console.log('Vowel Count: ' + result);
+    </script>
+</body>
+</html>

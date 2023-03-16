@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter</title>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h1>Write a JavaScript program to find duplicate values in a JavaScript array.</h1>
+    <h2>Open Console for Result</h2>
+
+    <script>
+        let arr = [1, 3, 4,6,8,6, 5, 5,2,4,4,1,6,8,6,8];
+
+        let duplicate = [];
+
+        arr.forEach((item,index,arr)=>{
+            if(arr.indexOf(item)!==index){
+                if(!duplicate.includes(item)){
+                    duplicate.push(item);
+                } 
+            }
+        } );
+
+        console.log(duplicate);
+    </script>
+</body>
+</html>

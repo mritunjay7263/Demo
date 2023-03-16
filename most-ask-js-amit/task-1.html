@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter</title>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h1>Swap two variables value without help of 3rd variable.<br>
+        let a = 5, let b = 10<br>
+        Expected: a=10, b=5"</h1>
+    <h2>Open Console for Result</h2>
+
+    <script>
+        
+        let arr = [1,1,2,3,1,4,3];
+
+        // let obj = {}
+        // obj[item] = 1;
+        // console.log(obj[item] = 1)
+
+        // arr.forEach((item) => {
+        //     if(obj[item]){
+        //         obj[item]++
+        //     }else{
+        //         obj[item] = 1;
+        //     }    
+        // });
+        // console.log(obj)
+
+        let obj = {}
+        let majorNum = 1;
+        let majorOccur = 1;
+
+        arr.forEach((item)=> obj[item] ? obj[item]++ : obj[item] = 1 )
+
+        for(let i in obj){
+            if(obj[i] > majorOccur){
+                majorNum = i;
+                majorOccur = obj[i];
+            }
+        }
+
+        console.log(`${majorNum} occur ${majorOccur} times.`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter</title>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h1>"Remove man from the array<br>
+        nameList = [""ssidmansfsdf"",""manserdc"",""sdfsman""];<br>
+        Expected Result: [""ssidsfsdf"",""serdc"",""sdfs""];"</h1>
+    <h2>Open Console for Result</h2>
+
+    <script>
+        let arr = ["ssidmansfsdf","manserdc","sdfsman"];
+        
+        let arr2 = arr.map((item, index)=>{
+            let removeMan = item.split('man')
+            let joinArr = removeMan.join('')
+            return joinArr
+        })
+
+        console.log(arr2)
+    </script>
+</body>
+</html>

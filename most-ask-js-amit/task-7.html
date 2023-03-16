@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter</title>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h1>Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched.</h1>
+    <h2>Open Console for Result</h2>
+
+    <script>
+        let match = document.getElementById('match');
+        let valuePrompt = prompt('Please Enter a number 1 to 10');
+        let rendamVal = Math.ceil(Math.random()*10)
+        //let rendamVal = Math.random() - 0.5
+        console.log(rendamVal)
+
+        if(rendamVal == match){
+            match.innerHTML = `Number is Match. ${rendamVal}`
+        }else{
+            match.innerHTML = `Number is not Match. ${rendamVal}`
+        }
+    </script>
+</body>
+</html>

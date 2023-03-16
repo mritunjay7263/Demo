@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter</title>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h1>Write a JavaScript program to reverse a given string.</h1>
+    <h2>Open Console for Result</h2>
+
+    <script>
+        let str = 'onsumaye';
+        let revert = str.split("").reverse().join("");
+        console.log(revert);
+
+        
+        function reverse(s) {
+            var o = '';
+            for (var i = s.length - 1; i >= 0; i--)
+            o += s[i];
+            return o;
+        }
+        console.log(reverse('Hello'))
+
+
+    </script>
+</body>
+</html>

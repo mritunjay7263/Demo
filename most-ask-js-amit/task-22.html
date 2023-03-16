@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter</title>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h1>Find out the items from the below array those addition will be the zero:<br>
+        arr = [-5,-4,-3,-2,0,2,4,6,8]<br> Output: [-4,4]</h1>
+    <h2>Open Console for Result</h2>
+
+    <script>
+        let arr = [-5,-4,-3,-2,0,2,4,6,3,8];
+        let arr2 = [...arr];
+
+        let i = 0;
+        let temArr = [];
+        let obj = {}
+        while(i<arr.length){
+            arr2 = [...arr];
+            arr2.splice(arr2.indexOf(arr2[i]),1);
+
+            arr2.forEach((item)=>{
+                
+                if(arr[i]+item === 0){
+                    if(!temArr.includes(Math.abs(arr[i])) && !temArr.includes(Math.abs(item))){
+                        temArr.push(Math.abs(arr[i]),Math.abs(item));
+                    obj[arr[i]] = item;
+                    }
+                }
+            })
+            
+            i++;
+        }
+        console.log(obj);
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter</title>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h2>"How to find object length in javascript.<br>
+        let object1 = {a: 'Amit', b: 42, c: 32};<br>
+        Expected output: 3"</h2>
+    <h3>Open Console for Result</h3>
+
+    <script>
+        const object1 = {a: 'Amit', b: 42, c: 32};
+
+        //Expected output: object1 ["a", "b", "c"]
+        //console.log(Object.keys(object1).length);
+        console.log(Object.entries(object1).length);
+
+
+    </script>
+</body>
+</html>

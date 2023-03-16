@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter</title>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h1>Write a JavaScript program to capitalize the first letter of each word of a given string.</h1>
+    <h2>Open Console for Result</h2>
+
+    <script>
+        let capfunction = (str) => {
+            str = str.split(' ')
+
+            for( i = 0; i < str.length; i++ ){
+                str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+                //str[i] = strArr[i][0].toUpperCase()
+                //console.log(strArr[i][0].toUpperCase())
+            }
+        
+            return str.join(' ')
+        }
+
+        console.log(capfunction('write a javaScript program'));
+    </script>
+</body>
+</html>

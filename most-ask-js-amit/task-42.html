@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter</title>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h2>const arr = [{id: 1, name: 'ABC'}, {id: 2, name: 'DEF'}, {id: 1, name: 'ABC'}];<br>
+        Output: [{id: 1, name: 'ABC'}, {id: 2, name: 'DEF'}]</h2>
+    <h3>Open Console for Result</h3>
+
+    <script>
+        // const arr = [{id: 1, name: 'ABC'}, {id: 2, name: 'DEF'}, {id: 1, name: 'ABC'}];
+
+        
+        var family = [{ name: "Mike", age: 10 }, { name: "Matt", age: 13 }, { name: "Nancy", age: 15 }, { name: "Adam", age: 22 }, { name: "Jenny", age: 85 }, { name: "Nancy", age: 2 }, { name: "Carl", age: 10 }]
+
+        unique = [...new Set(family.map(a => a.age))];
+
+        console.log(unique);
+
+    </script>
+</body>
+</html>
