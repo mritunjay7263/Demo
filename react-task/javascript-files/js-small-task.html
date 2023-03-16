@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Div Center */
+        /* .center1{width:200px; height: 100px; background-color: #eee; position: absolute; top:50%; left:50%; margin: -50px 0 0 -100px; font-size: 30px;}
+        .center2{width:200px; background-color: #eee; position: absolute; top:50%; left:50%; transform:translate(-50%, -50%)}*/
+        /* .center3{width:600px;height: 600px;display: flex;justify-content: center;align-items: center;}
+        .center3 div{width: 200px; background-color: #f00;}  */
+        /***** Div Center 4 Example *****/
+        /* body{display: flex;justify-content: center;align-items: center;min-height: 100vh;margin:0;padding:0;}
+        .center4{width: 400px; background-color: #f00;}  */
+        /***** Flex *****/
+        /* .flex-container{width: 1000px; display: flex; flex-direction:row; border: 1px solid #000;}
+        .flex-container div{background-color: #eee; margin: 10px;} */
+    </style>
+</head>
+<body>
+    <!-- <div class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>-->
+    <!-- <div class="center3"><div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, incidunt, nostrum a commodi iste similique nobis deserunt quos nam quasi quibusdam qui. Accusantium voluptatibus et magnam fugiat numquam, quisquam optio.</div></div>  -->
+    <!-- <div class="center4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, incidunt, nostrum a commodi iste similique nobis deserunt quos nam quasi quibusdam qui. Accusantium voluptatibus et magnam fugiat numquam, quisquam optio.</div>  -->
+
+    <!-- Flex  -->
+    <!-- <div class="flex-container">
+        <div>1. Lorem ipsum dolor.</div>
+        <div>2. Lorem ipsum dolor.</div>
+        <div>3. Lorem ipsum dolor.</div>
+        <div>4. Lorem ipsum dolor.</div>
+    </div> -->
+
+    <script>
+        //**** Task-1: Array Shuffling
+        //let arr = 'ramkishan';
+        // let arr2 = arr.split('') 0.5 - Math.random();
+        // let shuffleArr = [3,1,9,29,4,6,7,2,9];
+        // let arr2 = arr.split('');
+        // let arr3 = shuffleArr.sort((a,b)=>0.5-Math.random());
+        // console.log(arr3);
+
+        //**** Task-2: console printing
+        // console.log('amit');
+        // setTimeout(()=>{
+        //     console.log('Kumar');
+        //     sandeep();                   
+        // },0)
+        // function sandeep(){ return (console.log('sandeep'))}
+
+        //**** Task-3: Two Array concat
+        // let obj = {};
+        // let arr = [1, 2, 3, 4];
+        // let arr2 = ['Rohan', 'Ashish', 'Manoj', 'Ram'];
+        // arr.forEach((value, index)=>{
+        //     obj[value] = arr2[index];
+        //     //console.log(obj[value]  +  arr2[index] ) 
+        // })
+        // console.log(obj)
+
+        //**** Task-4:
+        // var a = 10;
+        // function abc(){
+        //     console.log(a);
+        //    let a = 20;
+        // }
+        // abc();
+
+        // function multi(x, y){
+        //     if(y){
+        //         return x * y;
+        //     }
+        //     else {
+        //         return (y) => {
+        //             return x*y;
+        //         }
+        //     }
+        // }
+        //multi(2)(3) //6
+        //multi(2,3) //6
+        // console.log(multi(2,3))
+        // console.log(multi(2)(3))
+
+
+        // let x = 5;
+        // let y = 10;
+        // if( x < y || x < 2 || x < 8 ){
+        //     noFollow = true
+        //     console.log('aaaaaaaaaaaaaaa')
+        // }else{
+        //     console.log('bbbbbbbbbbbbbbb')
+        // }
+
+        // if( (hostName.includes('localhost')) || (hostName.includes('commloan-test.com')) || (hostName.includes('quote.commloan')) ){
+        //     noFollow = true
+        // }
+        
+        // let hostName = 'commloan.com';
+
+        // let hosti = hostName.split('.')[0]
+        // console.log(hosti);
+
+        // let students = {name:{firstName:{lastName:"Vikas Kumar"}}}
+        // console.log(students?.name?.age);
+
+        //****Remove man from the array
+        // let nameList = ["ssidmansfsdf","manserdc","sdfsman"];
+        // let removeMan = nameList.map(item=>{
+        //     let rmMan = item.split("man");
+        //     let final = rmMan.join("");
+        //     return final;
+        // })
+        // console.log(removeMan);
+
+        // let nameList = ["ssidmansfsdf","manserdc","sdfsman"];
+        // let removMan = nameList.map((val)=>{
+        //     let rmMan = val.split('man');
+        //     let result = rmMan.join('');
+        //     return result;
+        // })
+        // console.log(removMan);
+        
+        //****Return Statment
+        // function myFunction() {
+        //     return console.log("Hello")
+        //     console.log("Hi")
+        // }
+        // myFunction()
+        
+        //****Ternary operators
+        // let age = 18;
+        // let message;
+        // age <= 17 ? message = 'You can drive.' : message = 'You cannot drive.'
+        // console.log(message);
+
+        //****If Else IF
+        // let marks = 1000;
+        // if(marks >= 70 && marks <= 100){
+        //     document.write("Best")
+        // }else if (marks >= 33 && marks < 70) {
+        //     document.write("Good")
+        // }else if (marks >= 0 && marks < 33) {
+        //     document.write("Fail")
+        // }else{
+        //     document.write("Please enter a valid marks")
+        // }
+
+        //****Switch Statment
+        // let days = 2;
+        // switch(days){
+        //     case(0): document.write('Today is Monday');
+        //     break;
+        //     case(1): document.write('Today is Thusday');
+        //     break;
+        //     case(2): document.write('Today is Wednesday');
+        //     break;
+        //     default: document.write('Please enter a vailed No.');
+        // }
+
+        //****Execution Context 
+        // var n = 2;
+        // function square(num){
+        //     var ans = num * num;
+        //     return ans;
+        // }
+        // var square2 = square(n);
+        // var square4 = square(4);
+        // console.log('square2 is ' + square2);
+        //console.log('square4 is ' + square4);
+
+        // let add = function(a, b){
+        //     return a + b;
+        // }
+        // let total = add(10, 33)
+        // console.log(total);
+
+        // let arr = [2, 1, 4, 6];
+        // console.log(arr);
+
+        //Prototype
+        // myObject = {city: "Madrid"};
+        // myObject1 = [1, 2, 3]
+        // console.log(myObject);
+        // console.log(myObject1);
+
+        //Object Constructor
+        // function Student(firstName, lastName){
+        //     this.firstName = firstName;
+        //     this.lastName = lastName;
+        //     this.getFullName = function(){
+        //         return this.firstName + " " + this.lastName;
+        //     };
+        // }
+        // Student.prototype.age = 33;
+        // //Person.prototype.nationality = "English";
+
+        // console.log(Student.age)
+        
+        // let persone = new Student('Amit', 'Kumar');
+        //console.log(persone.getFullName());
+        // persone.age = 33;
+        
+        // console.log(persone);
+
+        // let persone1 = new Student('Ram', 'Kishan');
+        // console.log(persone1);
+        
+
+        //****Call === With the call method, Any object method call to the another object.
+        // let student = {
+        //     name: 'Rajesh',
+        //     lastName: 'Sharma',
+        //     fullName: function(age){
+        //         console.log(`Hello ${this.name} ${this.lastName}, I am ${age} years old.`)
+        //     }
+        // }
+        // let student2 = {
+        //     name: 'Ashish',
+        //     lastName: 'Kumar'
+        // }
+        // student.fullName.call(student2, 55)
+
+        //****Apply 
+        // let student = {
+        //     name: 'Rajesh',
+        //     lastName: 'Sharma',
+        //     fullName: function(age, marks){
+        //         console.log(`Hello ${this.name} ${this.lastName}, I am ${age} years old. I have ${marks} marks in 1st term.`)
+        //     }
+        // }
+        // let student2 = {
+        //     name: 'Ashish',
+        //     lastName: 'Kumar'
+        // }
+        // student.fullName.apply(student2, [55, 80])
+
+        //****Bind 
+        // let student = {
+        //     name: 'Rajesh',
+        //     lastName: 'Sharma',
+        //     fullName: function(age, marks){
+        //         console.log(`Hello ${this.name} ${this.lastName}, I am ${age} years old. I have ${marks} marks in 1st term.`)
+        //     }
+        // }
+        // let student2 = {
+        //     name: 'Ashish',
+        //     lastName: 'Kumar'
+        // }
+        // let student3 = student.fullName.bind(student2);
+        // student3()
+
+        // function student(){
+        //     let name = 'Rohan';
+        //     function student2(){
+        //         console.log(name);
+        //     }
+        //     student2();
+        // }
+        // student()
+
+        //****LocalStorage
+        //window.localStorage.setItem('Username', 'smit');
+        //window.localStorage.setItem('Age', '33');
+        //console.log(localStorage.key(2))
+        //localStorage.removeItem('Age');
+        //localStorage.clear();
+
+        // const settings = {
+        //     backgroundColor: '#fff',
+        //     color: '#111',
+        //     theme: 'light'
+        // };
+        // localStorage.setItem('settings', JSON.stringify(settings));
+        // console.log(localStorage.getItem('settings'));
+
+        //**** Copy Object
+        // let student = {
+        //     name: 'Ashis',
+        //     Age: 33
+        // }
+
+        // let student1 = {
+        //     ...student
+        // }
+        // console.log(student1);
+
+        // let student2 = {
+        //     ...student
+        // }
+        // console.log(JSON.parse(JSON.stringify(student2)));
+
+        // let student3 = Object.assign({},student);
+        // console.log(student3);
+
+        //**** Map Method
+        // const arr = [2,4,7,29,23,56];
+        // //const arr2 = arr.map((x,i,a) => (x))
+        // const arr2 = arr.filter((x,i,a) => (x))
+        // console.log(arr2);
+
+        //**** Reduce Method
+        // const arr = [125, 50, 25];
+        // const arr1 = arr.reduce( (total, num) => {
+        //     return total + num
+        // }, 0)
+        // console.log(arr1)
+
+        //Reduce Method reduce the array and return the sum of the array.
+
+
+        //**** Promise
+        // let data = new Promise((resolve, reject)=>{
+        //     setTimeout(()=>{
+        //         resolve('Code run')
+        //     })
+        // })
+        // data.finally((fine)=>{
+        //     console.log(`Finally ${fine}`)
+        // })
+        // data.then((user)=>{
+        //     console.log(`Hello world 1 ${user}`)
+        // }).catch((err)=>{
+        //     console.log(`Hello world ${err}`)
+        // })
+
+        //Call Fetch API
+        // let apiUrl = fetch('https://jsonplaceholder.typicode.com/posts');
+        // apiUrl.then((data)=>{
+        //     return data.json();
+        // }).then((result)=>{
+        //     //console.log(result);
+        //     //return result;
+        //     console.log(
+        //         result.map((val)=>{
+        //             //<p>val.title</p>
+        //             console.log(`${val.id}. ${val.title}`)
+        //         })
+        //     ); 
+        // })
+
+        //****Async Await
+        // async function apicall(){
+        //     let prom = new Promise((resolve, reject)=>{
+        //         setTimeout(()=>{
+        //             resolve('Hello world');
+        //         },500)
+        //     });
+
+        //     let x = await prom;
+        //     console.log(x);
+
+        // //     let apiUrl = await fetch('https://jsonplaceholder.typicode.com/posts');
+        // //     apiUrl = await apiUrl.json();
+        // //     console.log(apiUrl);
+
+        // }
+        // apicall();
+
+        
+        // async function apiNew(){
+        //     // let promisNew = new Promise((resolve, reject)=>{
+        //     //     setTimeout(()=>{
+        //     //         resolve(console.log('First code'))
+        //     //     }, 2000)
+        //     // });
+
+        //     // let data = await promisNew
+
+        //     let data = await fetch('https://jsonplaceholder.typicode.com/posts/1/comments');
+        //     let dataTwo = await data.json();
+        //     console.log(dataTwo);
+        // }
+        // apiNew()
+
+        // let name = 'Akash Sharma';
+        // console.log(name);
+        // let result = name.split('').reverse().join('');
+        // console.log(result);
+
+        //====================== Data Types
+        // let counter1 = "Hi";
+        // console.log(typeof(counter1)); // "string"
+        // let counter2 = 120;
+        // console.log(typeof(counter2)); // "number"
+        // let counter3 = false; 
+        // console.log(typeof(counter3)); // "boolean"
+        // let counter4 = null; 
+        // console.log(typeof(counter4)); // "object"
+        // let counter5 = undefined; 
+        // console.log(typeof(counter5)); // "undefined"
+        
+        //====================== Javascript Generator Function
+        // function* generatorFun(){
+        //     yield 1; //Data read from yield
+        //     yield 2;
+        //     yield 3;
+        // }
+        // const gen = generatorFun();
+
+        // console.log(gen.next()) //{value: 1, done: false}
+        // console.log(gen.next()) //{value: 2, done: false}
+        // console.log(gen.next()) //{value: 3, done: false}
+        // console.log(gen.next()) //{value: undefined, done: true}
+
+        // for(let i of gen){
+        //     console.log(i)
+        // }
+
+        //====================== setTimeout in for loop
+        // for(var i = 0; i < 10; i++){
+        //     setTimeout(()=>{
+        //         console.log(i)
+        //     }, 1000)
+        // }
+        
+        //====================== Javascript Lexical scoping / Closure
+        // const outerFun = (a) => {
+        //     const b = 10;
+        //     const innerFun = () => {
+        //         console.log(`${a+b}`)
+        //     }
+        //     innerFun();
+        // }
+        // outerFun(5)
+        
+        //====================== Javascript Closure
+        // const outerFun = (a) => {
+        //     const b = 10;
+        //     const innerFun = () => {
+        //         console.log(`${a+b}`)
+        //     }
+        //     return innerFun
+        // }
+        // const myFun = outerFun(5)
+        // myFun();
+
+        
+
+
+        
+
+        
+
+
+
+
+        
+        
+
+        
+
+        
+
+
+
+
+
+
+
+
+
+        
+              
+        
+
+
+
+        
+    </script>
+    <!--
+    <style>
+     Event Bubling
+    body * {
+        margin: 10px;
+        border: 1px solid blue;
+    }
+    </style>
+    <form onclick="alert('form')">FORM
+    <div onclick="alert('div')">DIV
+        <p onclick="event.stopPropagation()">P</p>
+    </div>
+    </form>
+    -->
+
+
+</body>
+</html>

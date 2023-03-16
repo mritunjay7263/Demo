@@ -1,0 +1,32 @@
+{
+    "class": [
+      {
+        "id": 1,
+        "Name": "Mark",
+        "Roll": 11,
+        "Age": 32,
+        "Marks":55
+      },
+      {
+        "id": 2,
+        "Name": "Forest",
+        "Roll": 12,
+        "Age": 34,
+        "Marks":65
+      },
+      {
+        "id": 3,
+        "Name": "Amit",
+        "Roll": 34,
+        "Age": 26,
+        "Marks":80
+      },
+      {
+        "id": 4,
+        "Name": "Bikas",
+        "Roll": 17,
+        "Age": 22,
+        "Marks":85
+      }
+    ]
+  }
